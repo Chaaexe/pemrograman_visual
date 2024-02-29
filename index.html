@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexus Gamepad</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="img/rexus_logo_06.png" alt="">
+        </div>
+        <div class="burger" id="burger">
+            <i class="fas fa-bars fa-lg"></i>
+        </div>
+        <nav class="nav-list hidden">
+            <ul id="nav-list" class="hidden">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="artikel" id="produk">
+            <h2>GX300</h2>
+            <p>
+                Rexus Bluetooth Gamepad Gladius GX300 merupakan gamepad atau controller yang memiliki dual connection,
+                yaitu Bluetooth V4.2 dan kabel yang sudah kompatibel dengan Play Station 4. Gamepad ini juga dapat
+                digunakan di Play Station 5 (terbatas ke game PS4), Android (via Bluetooth), dan PC (via Wired X-Input).
+                Pada gamepad ini, Anda dapat menyimpan makro menggunakan fungsi tombol Opsi + MR/ML.
+            </p>
+        </article>
+
+        <aside class="side"  id="beranda">
+            <div class="content-image">
+                <img src="img/putih.png" alt="" id="img-utama">
+            </div>
+            <div class="image-pick">
+                <img src="img/putih.png" alt="" id="img-putih">
+                <img src="img/hitam.png" alt="" id="img-hitam">
+            </div>
+        </aside>
+
+        <div id="kontak">
+            <h2>Kontak</h2>
+            <ul>
+                <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Rexus Gamepad GX300 &#169; 2023, Tugas Akhir Dicoding Academy</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById("burger");
+        const menuList = document.getElementById("nav-list");
+        menuIcon.addEventListener("click", () =>{
+            menuList.classList.toggle("hidden");
+        })
+
+        document.getElementById("img-putih").addEventListener("click", function() {
+        document.getElementById("img-utama").src = "img/putih.png";
+        });
+        document.getElementById("img-hitam").addEventListener("click", function() {
+        document.getElementById("img-utama").src = "img/hitam.png";
+        });
+    </script>
+
+</body>
+
+</html>
